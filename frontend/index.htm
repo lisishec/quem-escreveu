@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem escreveu?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Quem escreveu?</h1>
+    </header>
+    <main>
+        <section class="adicionar">
+            <button onclick="Abrir()"><i class="fa-solid fa-plus"></i>Adicionar frase</button>
+        </section>
+        <!----------------FORM-------------------->
+        <div class="modal" id="modal">
+            <form action="" id="form" class="form">
+                <h2>Criar frase</h2>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="text" id="texto" placeholder="Digite sua frase" required>
+                <div class="form-buttons">
+                    <button>Criar</button>
+                    <button onclick="Fechar()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <!------------------------------------>
+        <section class="mostrar-frase">
+            <button onclick="Mostrar()">Mostrar frase</button>
+        </section>
+        <div class="container-princ"></div>
+    </main>
+    <footer>
+        <h2>Ranking</h2>
+        <div class="ranking" id="ranking"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
