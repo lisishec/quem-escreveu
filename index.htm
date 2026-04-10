@@ -14,29 +14,29 @@
     </header>
     <main>
         <section class="adicionar">
-            <i class="fa-solid fa-plus"></i><h2>Adicionar frase</h2>
+            <button onclick="Abrir()" id="abrir"><i class="fa-solid fa-plus"></i>Adicionar frase</button>
         </section>
         <!----------------FORM-------------------->
         <div class="modal" id="modal">
-            <form action="" id="form">
+            <form action="" id="form" class="form">
                 <h2>Criar frase</h2>
                 <input type="text" id="nome" placeholder="Seu nome" required>
                 <input type="text" id="texto" placeholder="Digite sua frase" required>
                 <div class="form-buttons">
-                    <button>Salvar</button>
-                    <button onclick="Fechar()">Cancelar</button>
+                    <button>Criar</button>
+                    <button onclick="Fechar()" id="fechar">Cancelar</button>
                 </div>
             </form>
         </div>
         <!------------------------------------>
         <section class="mostrar-frase">
-            <button onclick="Abrir()">Mostrar frase</button>
+            <button onclick="Mostrar()" id="mostrar">Mostrar frase</button>
         </section>
         <div class="container-princ"></div>
     </main>
     <footer>
         <h2>Ranking</h2>
-        <div class="ranking"></div>
+        <div class="ranking" id="ranking"></div>
     </footer>
     <script src="script.js"></script>
 </body>
