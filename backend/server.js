@@ -6,6 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const frasesRoutes = require('./src/routes/frases.routes');
+
+app.use('/frases', frasesRoutes);
+
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
