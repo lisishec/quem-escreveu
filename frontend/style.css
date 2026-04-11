@@ -22,6 +22,7 @@ h1{
     font-size: 3rem;
     margin-top: 2rem;
     animation: btnColor 5000ms infinite linear;
+    text-decoration: 5px underline;
 }
 
 
@@ -44,15 +45,17 @@ h1{
     gap: 10px;
     align-items: center;
     color: #fff;
+    background: #ffffff57;
 }
 .adicionar button:hover{
-    background: #ffffff57;
+    background: #00000057;
 }
 
 
 
 .modal{
     background-color: #00000072;
+    backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     right: 0;
@@ -100,6 +103,37 @@ h1{
     animation: btnBg 4000ms infinite linear;
     color: #fff;
 }
+
+.container-princ{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 3rem;
+    background: #00000057;
+}
+.card{
+    background: #fff;
+    padding: 30px 15px;
+    width: 200px;
+    min-height: 340px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 300ms;
+}
+.card:hover{
+    box-shadow: 0 0 15px #fff;
+}
+.card p{
+    font-family: caveat;
+    font-size: 35px;
+    text-align: center;
+}
+
+
 
 
 
