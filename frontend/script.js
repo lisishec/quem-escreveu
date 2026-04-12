@@ -4,7 +4,8 @@ const url = "https://quem-escreveu.onrender.com/frases"
 
 const modal = document.getElementById('modal');
 function Abrir() {
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    modal.style.alignItems = "center";
 }
 function Fechar() {
     modal.style.display = "none";
